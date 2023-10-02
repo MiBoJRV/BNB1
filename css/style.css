@@ -25,9 +25,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/** {*/
+/*	outline: 1px solid red;*/
+/*}*/
 body {
 	line-height: 1;
 	background: #171717;
+	font-family: 'Liberation Sans', sans-serif;
 }
 body::-webkit-scrollbar {
 	width: 50px;
@@ -51,15 +56,29 @@ table {
 /* Custom CSS */
 
 @font-face {
-	font-family: 'Poppins', sans-serif;
+	
 	src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 }
 
+@font-face {
+	font-family: 'Liberation Sans', sans-serif;
+	src: url('fonts/LiberationSans-Regular.ttf');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Liberation Sans', sans-serif;
+	src: url('fonts/LiberationSans-Bold.ttf');
+	font-weight: 700;
+	font-display: swap;
+}
 
 .main-nav{
 	background-color: #171717;
 	/* height: 88px; */
 	position: relative;
+	padding-top: 48px;
 }
 
 .navbar {
@@ -67,17 +86,21 @@ table {
 	margin: 0 auto;
 }
 .nav-link {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
-	margin-right: 20px;
+	margin-right: 14px;
 }
 .nav-link:hover{
 	color: #FED003;
 }
 .navbar-nav > .active > a{
 	color: #FED003;
+}
+
+.navbar-collapse img {
+	display: none;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -90,7 +113,7 @@ table {
 	border-radius: 32px;
 }
 .com-btn a {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 16px;
 	font-weight: 500;
 	color: #FED003;
@@ -113,26 +136,40 @@ table {
 	position: relative;
 	padding-bottom: 80px;
 }
+.home-cont {
+	margin-top: 54px;
+}
+.home-cont-1 {
+	margin-top: 81px;
+}
 .home-h2 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Liberation Sans', sans-serif;
 	font-size: 64px;
 	font-weight: 700;
 	color: #FED003;
 }
 .home-h3 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 48px;
-	font-weight: 400;
+	font-family: 'Liberation Sans', sans-serif;
+	font-size: 64px;
+	font-weight: 700;
 	color: #D1CECE;
 }
 .home-h4 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Liberation Sans', sans-serif;
 	font-size: 34px;
 	font-weight: 400;
 	color: #D1CECE;
 }
+.home-h3-1 {
+	font-family: 'Liberation Sans', sans-serif;
+	color: #D1CECE;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 48px;
+	margin-top: 24px;
+}
 .home-h5 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Liberation Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	color: #D1CECE;
@@ -146,7 +183,7 @@ table {
 }
 
 .title-center {
-	font-family: 'Poppins', sans-serif;
+	margin-top: 20px;
 	font-size: 32px;
 	font-weight: 600;
 	color: #FED003;
@@ -154,8 +191,12 @@ table {
 	padding-bottom: 20px;
 }
 
+.title-center span {
+	color: #FFF;
+}
+
 .reg-text {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 18px;
 	font-weight: 400;
 	color: #DEDEDE;
@@ -182,15 +223,15 @@ table {
 	box-shadow: 0px 0px 17px #000000D9;
 	border: 2px solid #000000;
 	list-style: none;
-	font-family: 'Poppins', sans-serif;
+	
 
 }
 
 .ecoleft ul li a{
-	font: normal normal normal 16px/18px Poppins;
+	line-height: 18px;
 	letter-spacing: 0px;
 	color: #FFF;
-	font-family: 'Poppins', sans-serif;
+	
 }
 
 .ecoleft ul li a:hover{
@@ -198,7 +239,7 @@ table {
 }	
 
 .p-center{
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 18px;
 	font-weight: 300;
 	color: #DEDEDE;
@@ -214,7 +255,7 @@ table {
 	height: 100%;
 }
 .wb-card h2 {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 24px;
 	font-weight: 600;
 	color: #FED003;
@@ -222,7 +263,7 @@ table {
 }
 
 .wb-card p {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 16px;
 	font-weight: 300;
 	color: #DEDEDE;
@@ -247,7 +288,7 @@ a.morelink {
 }
 
 .para1{
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 18px;
 	font-weight: 300;
 	color: #DEDEDE;
@@ -256,7 +297,7 @@ a.morelink {
 	padding-left:40px;
 }
 .para {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 18px;
 	font-weight: 300;
 	color: #DEDEDE;
@@ -268,7 +309,7 @@ a.morelink {
 }
 
 .text-yellow{
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 16px;
 	font-weight: 300;
 	color: #FED003;
@@ -292,7 +333,7 @@ a.morelink {
 	right: 0;
 }
 .hw-title{
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 32px;
 	font-weight: 600;
 	color: #ffffff;
@@ -301,7 +342,7 @@ a.morelink {
 }
 
 .hw-sub-title{
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 21px;
 	font-weight: 300;
 	color: #FED003;
@@ -343,7 +384,7 @@ a.morelink {
 	padding: 20px;
 	color: #FFFFFF;
 	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	
 }
 .st-tabs ul li a.active {
 	background-color: #FED003 !important;
@@ -352,7 +393,7 @@ a.morelink {
 	padding: 20px;
 	color: #171717 !important;
 	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	
 }
 
 .sta-content > .active {
@@ -427,7 +468,7 @@ a.morelink {
 	text-align: center
 }
 .st-card .card-body h2 {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 16px;
 	font-weight: 600;
 	color: #FED003;
@@ -436,7 +477,7 @@ a.morelink {
 }
 
 .st-card .card-body h3 {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 13px;
 	font-weight: 400;
 	color: #D1CECE;
@@ -451,13 +492,13 @@ a.morelink {
 }
 
 .head-2 {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 32px;
 	font-weight: 400;
 	color: #D1CECE;
 }
 .head-2 span {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 32px;
 	font-weight: 400;
 	color: #FED003;
@@ -467,7 +508,7 @@ a.morelink {
 }
 
 .plan-sec p {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 18px;
 	font-weight: 400;
 	color: #D1CECE;
@@ -486,13 +527,23 @@ a.morelink {
 }
 
  .reward-sec p {
-    font-family: 'Poppins', sans-serif;
+    
     font-size: 16px;
     font-weight: 400;
     color: #D1CECE;
     line-height: 1.5;
     padding: 10px 0px;
 }
+
+ .faq-text {
+	 color: #FFF;
+	 text-align: center;
+	 font-size: 24px;
+	 font-style: normal;
+	 font-weight: 400;
+	 line-height: 32px;
+	 margin-bottom: 44px;
+ }
 
 .faq-sec {
 	padding: 30px 0px;
@@ -527,12 +578,14 @@ a.morelink {
 	color: #D1CECE;
 	font-size: 14px;
 	text-align: left;
-	font-family: 'Poppins', sans-serif;
+	
 	padding-left: 10px;
 	text-decoration: none;
 	font-weight: 700;
 	height: 24px;
 	padding-right: 27px;
+	z-index: 100;
+	position: relative;
 }
 
 /*.faq-tab a::after {*/
@@ -544,7 +597,7 @@ a.morelink {
 /*}*/
 
 .faq-content {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -631,7 +684,7 @@ a.morelink {
 .mail a {
     color: #FFF;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    
     text-decoration: none;
     top: -8px;
     position: relative;
@@ -643,7 +696,7 @@ a.morelink {
 .mail p {
     color: #fff;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    
     position: relative;
     margin-left: 45px;
     top: -24px;
@@ -655,7 +708,7 @@ a.morelink {
 .foot-title {
     color: #FC0;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    
     font-weight: 600
 }
 
@@ -699,7 +752,7 @@ a.morelink {
     margin: 30px auto;
 	color: #171717;
     font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
+    
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -723,7 +776,7 @@ a.morelink {
 	margin: 20px 0px;
 	padding: 10px;
 	color: #fff;
-	font-family: 'Poppins', sans-serif;
+	
 }
 .verified:hover {
 	color: #FED003;
@@ -734,7 +787,7 @@ a.morelink {
 	border-collapse: separate;
 	border-spacing: 8px;
 	min-width: 350px;
-	font-family: 'Poppins', sans-serif;
+	
 	font-weight: 600;
 	color: #fff;
 	font-size: 20px;
@@ -806,7 +859,7 @@ a.morelink {
 
   }
   .table tr td {
-	font-family: 'Poppins', sans-serif;
+	
 	font-weight: 600;
 	border: 1px solid #FED003;
     border-radius: 12px;
@@ -849,7 +902,7 @@ a.morelink {
 
  .contactForm .form-group label {
     color: #8c8c8c;
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 12px;
 	line-height: 25px;
  }
@@ -860,7 +913,7 @@ a.morelink {
 	 border-left: none;
 	 border-right: none;
 	 border-radius: 0px;
-	 font-family: 'Poppins', sans-serif;
+	 
 	 color: #D1CECE;
  }
  .contactForm .form-group textarea {
@@ -870,7 +923,7 @@ a.morelink {
 	border-left: none;
 	border-right: none;
 	border-radius: 0px;
-	font-family: 'Poppins', sans-serif;
+	
 	color: #D1CECE;
  }
  .submit-btn {
@@ -881,7 +934,7 @@ a.morelink {
     margin: 30px auto;
 	color: #171717;
     font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
+    
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -901,7 +954,7 @@ a.morelink {
     margin-top: 4px;
 }
 .select-lang {
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 0.8rem;
     line-height: 23px;
 }
@@ -933,7 +986,7 @@ a.morelink {
 	width: 50px;
     text-align: center;
     color: #fff;
-	font-family: 'Poppins', sans-serif;
+	
 }
 .telegram-support a{
 	text-decoration: none;
@@ -945,7 +998,7 @@ a.morelink {
 }
 
 .title-side{
-	font-family: 'Poppins', sans-serif;
+	
 	font-size: 32px;
 	font-weight: 600;
 	color: #FED003;
@@ -992,14 +1045,14 @@ a.morelink {
 	font-size: 17px;
 	font-weight: 600;
 	border-radius:3px;
-	font-family: 'Poppins', sans-serif;
+	
 
 }
 .language-btn-download:hover{
 	background-color: #FED003;
 	padding: 10px 10px;
 	border: 0px transparent;
-	font-family: 'Poppins', sans-serif;
+	
 	color: #000 !important;
 	font-size: 17px;
 	font-weight: 600;
@@ -1008,7 +1061,7 @@ a.morelink {
 	box-shadow: 1px 1px 2px 1px rgb(148, 146, 146);
 }
 .title-center-h4{
-	font-family: 'Poppins', sans-serif;
+	
     font-size: 17px;
     font-weight: 600;
     color: white;
